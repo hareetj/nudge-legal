@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nudge - Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 1.5rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { color: #666; font-size: 0.85rem; margin-bottom: 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: #006592; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: March 25, 2026</p>
+
+<p>Nudge ("we", "our", "the app") is a proximity-based social discovery app. This policy explains what data we collect, why, and how we protect it.</p>
+
+<h2>1. Data We Collect</h2>
+
+<h3>Account Information</h3>
+<ul>
+  <li><strong>Apple Sign In:</strong> We receive your name and email (if you choose to share them) from Apple. We store a display name, profile photo, and a unique user ID.</li>
+  <li><strong>Profile data you provide:</strong> Bio, interests, gender, connection intents, profile photo, and vibe tag.</li>
+</ul>
+
+<h3>Location Data</h3>
+<ul>
+  <li><strong>Approximate location:</strong> Used to determine your general area for proximity features and venue detection. We use geofencing to detect when you are near supported locations.</li>
+  <li><strong>Presence logs:</strong> When you dwell at a location, we periodically log your approximate position so other users can see recent activity ("ghosts"). These logs are deleted after 6 hours.</li>
+</ul>
+
+<h3>Bluetooth Data</h3>
+<ul>
+  <li><strong>BLE advertising:</strong> Your device broadcasts a rotating, ephemeral hash derived from your user ID. We never broadcast your raw user ID or personal information over Bluetooth.</li>
+  <li><strong>Signal strength (RSSI):</strong> Used solely to estimate proximity for positioning in the stream view. Not stored on our servers.</li>
+</ul>
+
+<h3>Usage Data</h3>
+<ul>
+  <li>Anonymous analytics events (e.g., feature usage counts, session duration) to improve the app. These contain no personally identifiable information.</li>
+</ul>
+
+<h2>2. How We Use Your Data</h2>
+<ul>
+  <li><strong>Social discovery:</strong> Your profile, interests, and embeddings are used to compute compatibility scores with nearby users.</li>
+  <li><strong>Proximity matching:</strong> BLE and location data determine who is physically nearby.</li>
+  <li><strong>Messaging:</strong> If two users mutually nudge each other, they can exchange messages for 24 hours.</li>
+  <li><strong>Safety:</strong> Block and report features use your user ID to enforce restrictions.</li>
+</ul>
+
+<h2>3. Data Retention</h2>
+<ul>
+  <li><strong>Matches:</strong> Local match records are automatically deleted after 24 hours.</li>
+  <li><strong>Ghost presence:</strong> Presence logs are pruned after 6 hours.</li>
+  <li><strong>Messages:</strong> Conversation windows expire 24 hours after a mutual nudge.</li>
+  <li><strong>Account data:</strong> Retained until you delete your account.</li>
+</ul>
+
+<h2>4. Data Sharing</h2>
+<p>We do not sell your data. Your data may be shared with:</p>
+<ul>
+  <li><strong>Other Nudge users:</strong> Your display name, photo, bio, interests, vibe tag, and connection intents are visible to nearby users. Your exact location is never shared.</li>
+  <li><strong>Service providers:</strong> We use Supabase for backend infrastructure (database, authentication, storage). Data is stored in their secured infrastructure.</li>
+  <li><strong>AI services:</strong> Your interests and bio are processed by Google Gemini to generate embeddings and vibe tags. This data is sent in anonymized form without your name or contact details.</li>
+</ul>
+
+<h2>5. Data Security</h2>
+<ul>
+  <li>BLE identity uses rotating ephemeral hashes, not raw user IDs.</li>
+  <li>Authentication uses Apple's secure Sign In flow with PKCE.</li>
+  <li>All network communication uses HTTPS/TLS.</li>
+  <li>Blocked users are enforced at both the software and BLE hardware level.</li>
+</ul>
+
+<h2>6. Your Rights</h2>
+<ul>
+  <li><strong>Access & export:</strong> You can view all your profile data within the app.</li>
+  <li><strong>Deletion:</strong> You can permanently delete your account and all associated data from Settings. This is irreversible.</li>
+  <li><strong>Invisibility:</strong> You can enable Invisible Mode to hide from the radar at any time.</li>
+  <li><strong>Blocking:</strong> Blocked users are filtered at the BLE level and cannot see or interact with you.</li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+<p>Nudge is not intended for users under 18. We do not knowingly collect data from minors.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this policy from time to time. Continued use of the app constitutes acceptance of the updated policy.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy? Reach us at <a href="mailto:privacy@nudgeapp.com">privacy@nudgeapp.com</a>.</p>
+
+</body>
+</html>
